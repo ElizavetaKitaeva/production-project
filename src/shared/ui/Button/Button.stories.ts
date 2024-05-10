@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { fn } from "@storybook/test";
 
-import { Button } from "./Button";
+import { Button, ThemeButton } from "./Button";
+import "app/styles/index.scss";
 
 const meta: Meta<typeof Button> = {
   title: "Example/Button",
@@ -9,22 +10,32 @@ const meta: Meta<typeof Button> = {
   parameters: {
     layout: "centered",
   },
-
   tags: ["autodocs"],
-
-  // argTypes: {
-  //   backgroundColor: { control: 'color' },
-  // },
-
+  argTypes: {
+    // backgroundColor: { control: "color" },
+  },
   args: { onClick: fn() },
 };
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+
 export const Primary: Story = {
-  args: {},
+  args: {
+    children: "Text",
+  },
 };
 
-export const Secondary: Story = {
-  args: {},
+export const Clear: Story = {
+  args: {
+    children: "Text",
+    theme: ThemeButton.CLEAR,
+  },
+};
+
+export const Outline: Story = {
+  args: {
+    children: "Text",
+    theme: ThemeButton.OUTLINE,
+  },
 };

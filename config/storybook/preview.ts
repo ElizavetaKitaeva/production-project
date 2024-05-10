@@ -1,16 +1,17 @@
-// // import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react";
+import React from "react";
+import "../../src/app/styles/index.scss";
+import { ThemeDecorator } from "../../src/shared/config/storybook/StyleDecorator/StyleDecorator";
 
-// import { Preview } from "@storybook/react";
+const preview: Preview = {
+  parameters: {
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/i,
+      },
+    },
+  },
+};
 
-// const preview: Preview = {
-//   parameters: {
-//     controls: {
-//       matchers: {
-//         color: /(background|color)$/i,
-//         date: /Date$/i,
-//       },
-//     },
-//   },
-// };
-
-// export default preview;
+export default preview;

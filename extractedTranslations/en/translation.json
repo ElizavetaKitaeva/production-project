@@ -4,9 +4,13 @@
       "": ""
     }
   },
+  "decrement": "decrement",
+  "increment": "increment",
   "lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-aliquid-commodi-consequatur-eligendi-impedit-incidunt-necessitatibus-possimus-quis-saepe-sunt-totam": "lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-aliquid-commodi-consequatur-eligendi-impedit-incidunt-necessitatibus-possimus-quis-saepe-sunt-totam",
   "toggle": "",
   "{t('lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-aliquid-commodi-consequatur-eligendi-impedit-incidunt-necessitatibus-possimus-quis-saepe-sunt-totam')}": "{t('lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit-aliquid-commodi-consequatur-eligendi-impedit-incidunt-necessitatibus-possimus-quis-saepe-sunt-totam')}",
+  "Введите username": "Введите username",
+  "Введите пароль": "Введите пароль",
   "Войти": "Войти",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
